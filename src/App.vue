@@ -12,6 +12,7 @@ export default {
 }
 </script>
 <style lang="scss">
+
 html[data-theme="Green"]{
   --navColor:#55917F;
   --navTextColor:#EFF2F1;;

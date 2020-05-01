@@ -1,6 +1,6 @@
 <template>
     <div class="delete" @click="deleteEvent">
-        <img src="@/assets/delete.png" alt="">
+        <ion-icon name="trash-outline"></ion-icon>
     </div>
 </template>
 
@@ -29,9 +29,12 @@ export default {
     &:hover{
         background-color:#eb4d4b;
     }
-    img{
-        width: 80%;
-        height: 80%;
+    ion-icon{
+        font-size: 2em;
+        &:hover{
+            color: #fff;
+        }
     }
+    
 }
 </style>

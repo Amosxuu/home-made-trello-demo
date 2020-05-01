@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
     <div class="logo">
-        
+        <ion-icon name="newspaper-outline"></ion-icon>
     </div>
     <div class="title" >
         拖曳記事簿
@@ -78,11 +78,13 @@ methods:{
         
     }
     .logo{
-        margin-left:30px;
-        width: 8vh;
-        height: 8vh;
-        background: url('../assets/writing.png');
-        background-size: cover;
+        display: flex;
+        ion-icon{
+            font-size: 3.5em;
+            color: var(--navTextColor);
+            padding: 5px;
+            padding-left: 10px;
+        }
     }
 }
 /////////////////////////////////

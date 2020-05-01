@@ -20,7 +20,9 @@
                 ></textarea>
             </div>
         </div>
-        <button class="task-submit" @click="submit">送出</button>
+        <div class="task-submit"  @click="submit">
+            <ion-icon name="push"></ion-icon>
+        </div>
     </div>
 </transition>
 </template>
@@ -65,8 +67,7 @@ export default {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 60%;
-    height: 60%;
+    width: 600px;
     border-radius: 10px;
     padding: 10px;
     background-color:  var(--darkColor);
@@ -91,13 +92,14 @@ export default {
         vertical-align: middle;
         color:var(--textColor);
         letter-spacing: 10px;
+        margin: 10px;
     }
     
     .description-area{
         margin-top: 20px;
         .description-input{
             width: 100%;
-            height: 200px;
+            height: 130px;
             padding: 5px;
             font-size: 1em;
             border-radius: 10px;
@@ -106,19 +108,18 @@ export default {
         }
     }
     .task-submit{
-        margin-top: 10px;
+        margin: 5px;
+        float: right;
         padding: 10px;
         width: 80px;
-        font-size: 1.2em;
-        position: absolute;
+        font-size: 2.5em;
         border-radius: 10px;
-        right: 10px;
         background-color: #39b982;
         color: white;
-        border: none;
-        outline: none;
         box-shadow: -3px 3px #333;
         transform: translate(0px ,0px);
+        display: flex;
+        justify-content: center;
         cursor: pointer;
         &:active{
             background-color:#eb4d4b;

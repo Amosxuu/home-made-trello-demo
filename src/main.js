@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import DeleteBtn from './components/DeleteBtn.vue'
 import NavBar from '@/components/NavBar.vue'
-
+Vue.config.ignoredElements = [/^ion-/]
 Vue.component('DeleteBtn',DeleteBtn)
 Vue.component('NavBar',NavBar)
 Vue.config.productionTip = false
